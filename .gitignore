@@ -1,19 +1,15 @@
-# Ignore dataset
-data/
-*.zip
+# Ignore Python virtual environments
+myenv/
+venv/
+.env/
 
-# Ignore Python cache
+# Ignore cache and logs
 __pycache__/
 *.pyc
+*.log
 
-
-# Ignore models
-*.h5
-*.json
-*.pkl
-
-# Ignore notebook checkpoints
+# Ignore Jupyter checkpoints
 .ipynb_checkpoints/
 
-# Ignore virtual environment
-venv/
+# Ignore dataset (optional if too large, or upload separately)
+data/
