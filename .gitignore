@@ -1,15 +1,33 @@
-# Ignore Python virtual environments
+# Ignore virtual environment
 myenv/
 venv/
 .env/
 
-# Ignore cache and logs
+# Ignore Python cache
 __pycache__/
 *.pyc
-*.log
+*.pyo
+*.pyd
 
-# Ignore Jupyter checkpoints
+# Ignore Jupyter notebook checkpoints
 .ipynb_checkpoints/
 
-# Ignore dataset (optional if too large, or upload separately)
+# Ignore dataset folders, but allow .zip
+dataset/
 data/
+
+# Ignore model checkpoints (if too large; otherwise keep models/)
+*.h5
+*.hdf5
+*.ckpt
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
+
+# Ignore temporary files
+*.tmp
+*.swp
